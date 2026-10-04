@@ -47,4 +47,9 @@ public class FlagService {
         flag.setEnabled(enabled);
         return flagRepository.save(flag);
     }
+    public void deleteById(UUID id){
+        getById(id);//to return 404 if not exist
+        flagRepository.deleteById(id);
+
+    }
 }
