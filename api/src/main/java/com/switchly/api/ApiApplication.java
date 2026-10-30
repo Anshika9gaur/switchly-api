@@ -10,5 +10,4 @@ public class ApiApplication {
 		System.out.println("hello i have started learning spring boot");
 		SpringApplication.run(ApiApplication.class, args);
 	}
-
 }
